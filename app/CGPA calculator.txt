@@ -1,0 +1,375 @@
+CGPA calculator
+
+
+activity_main.xml
+ <?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/usernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_below="@id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+</RelativeLayout>
+
+activity_welcome.xml
+
+ <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CGPA Calculator"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
+
+activity_cgpa.xml
+
+ <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewNum1"
+        android:layout_width="wrap_content"
+        android:text="Subject Code"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/textViewNum1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Subject Code"/>
+
+    <TextView
+        android:id="@+id/textViewNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grade"
+        android:layout_below="@id/editTextNum1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/textViewNum2"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Grade"/>
+    <TextView
+        android:id="@+id/textViewNum3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credit"
+        android:layout_below="@id/editTextNum2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNum3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/textViewNum3"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Credit"/>
+
+    <TextView
+        android:id="@+id/textViewNum4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject Code"
+        android:layout_below="@id/editTextNum3"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNum4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/textViewNum4"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Subject Code"/>
+
+    <TextView
+        android:id="@+id/textViewNum5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grade"
+        android:layout_below="@id/editTextNum4"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNum5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/textViewNum5"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Grade"/>
+    <TextView
+        android:id="@+id/textViewNum6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credit"
+        android:layout_below="@id/editTextNum5"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNum6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/textViewNum6"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Credit"/>
+
+
+    <Button
+        android:id="@+id/buttonSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_below="@id/editTextNum6"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPA"
+        android:layout_below="@id/buttonSum"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/textViewResult1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CGPA"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"/>
+</RelativeLayout>
+
+MainActivity.java
+
+package com.example.cgpacalculator;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+    private EditText username;
+    private EditText password;
+    private Button loginButton;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        username = findViewById(R.id.username);
+        password = findViewById(R.id.password);
+        loginButton = findViewById(R.id.loginButton);
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String enteredUsername = username.getText().toString();
+                String enteredPassword = password.getText().toString();
+
+                if (enteredUsername.equals("123") && enteredPassword.equals("123")) {
+                    Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(MainActivity.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+}
+
+WelcommeActivity.java
+
+package com.example.cgpacalculator;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+
+import androidx.appcompat.app.AppCompatActivity;
+public class WelcomeActivity extends AppCompatActivity {
+
+    private Button loginButton;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_welcome);
+
+
+        loginButton = findViewById(R.id.loginButton);
+
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(WelcomeActivity.this, CgpaCalculator.class);
+                startActivity(intent);
+
+                }
+
+        });
+    }
+}
+
+CgpaCalculator.java
+
+package com.example.cgpacalculator;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class CgpaCalculator extends AppCompatActivity {
+
+    private EditText editTextNum1;
+    private EditText editTextNum2;
+    private EditText editTextNum3;
+    private EditText editTextNum4;
+    private EditText editTextNum5;
+    private EditText editTextNum6;
+    private Button buttonSum;
+    private TextView textViewResult;
+    private TextView textViewResult1;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_cgpa);
+
+        editTextNum1 = findViewById(R.id.editTextNum1);
+        editTextNum2 = findViewById(R.id.editTextNum2);
+        editTextNum3 = findViewById(R.id.editTextNum3);
+        editTextNum4 = findViewById(R.id.editTextNum4);
+        editTextNum5 = findViewById(R.id.editTextNum5);
+        editTextNum6 = findViewById(R.id.editTextNum6);
+        buttonSum = findViewById(R.id.buttonSum);
+        textViewResult = findViewById(R.id.textViewResult);
+        textViewResult1 = findViewById(R.id.textViewResult1);
+
+        buttonSum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String num1Str = editTextNum1.getText().toString();
+                String num2Str = editTextNum2.getText().toString();
+                String num3Str = editTextNum3.getText().toString();
+                String num1Str1 = editTextNum4.getText().toString();
+                String num2Str1 = editTextNum5.getText().toString();
+                String num3Str1 = editTextNum6.getText().toString();
+
+
+                if ( num2Str.isEmpty()|| num3Str.isEmpty()||num2Str1.isEmpty()||num3Str1.isEmpty()) {
+                    Toast.makeText(CgpaCalculator.this, "Please enter credit and grade", Toast.LENGTH_SHORT).show();
+                } else {
+                    int sub1 = Integer.parseInt(num1Str);
+                    int credit1= Integer.parseInt(num2Str);
+                    int grade1 = Integer.parseInt(num3Str);
+                    int sub2= Integer.parseInt(num1Str1);
+                    int grade2 = Integer.parseInt(num2Str1);
+                    int credit2 = Integer.parseInt(num3Str1);
+                    int subs=sub1+sub2;
+                    int grades = grade1+grade2;
+                    int credits=credit1+credit2;
+                    int  sum=grades*credits;
+                    int gpa=sum/credits;
+                    textViewResult.setText("GPA: " + gpa);
+                    textViewResult1.setText("CGPA: " + gpa);
+
+                }
+            }
+        });
+    }
+}

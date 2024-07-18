@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+activity_main.xml
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/usernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_below="@id/user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+</RelativeLayout>
+
+activity_welcome.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+
+    <Button
+    android:id="@+id/buttonSum"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sum"
+    android:layout_marginTop="30dp"
+    android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sub"
+        android:layout_below="@id/buttonSum"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiply"
+        android:layout_below="@id/buttonSub"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/buttonDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divide"
+        android:layout_below="@id/buttonMultiply"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+<RelativeLayout>
+
+activity_sum.xml
+
+ <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Num 1"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/textViewNum1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter number 1"/>
+
+    <TextView
+        android:id="@+id/textViewNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Num 2"
+        android:layout_below="@id/editTextNum1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/textViewNum2"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter number 2"/>
+
+    <Button
+        android:id="@+id/buttonSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_below="@id/editTextNum2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:layout_below="@id/buttonSum"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"/>
+</RelativeLayout>
+
+
+activity_sub.xml
+
+ <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Num 1"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/textViewNum1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter number 1"/>
+
+    <TextView
+        android:id="@+id/textViewNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Num 2"
+        android:layout_below="@id/editTextNum1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/textViewNum2"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter number 2"/>
+
+    <Button
+        android:id="@+id/buttonSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_below="@id/editTextNum2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:layout_below="@id/buttonSub"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"/>
+</RelativeLayout>
+
+
+activity_mul.xml
+
+ <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Num 1"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/textViewNum1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter number 1"/>
+
+    <TextView
+        android:id="@+id/textViewNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Num 2"
+        android:layout_below="@id/editTextNum1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/textViewNum2"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter number 2"/>
+
+    <Button
+        android:id="@+id/buttonMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_below="@id/editTextNum2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:layout_below="@id/buttonMultiply"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"/>
+</RelativeLayout>
+
+activity_div.xml
+
+ <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Num 1"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/textViewNum1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter number 1"/>
+
+    <TextView
+        android:id="@+id/textViewNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Num 2"
+        android:layout_below="@id/editTextNum1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/textViewNum2"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter number 2"/>
+
+    <Button
+        android:id="@+id/buttonDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_below="@id/editTextNum2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:layout_below="@id/buttonDiv"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"/>
+</RelativeLayout>
+
+
+MainActivity.java
+
+package com.example.loginapp;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+    private EditText user;
+    private EditText pass;
+    private Button Button;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        user = findViewById(R.id.user);
+        pass = findViewById(R.id.pass);
+        Button = findViewById(R.id.Button);
+
+        Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String enteredUsername = user.getText().toString();
+                String enteredPassword = pass.getText().toString();
+
+                if (enteredUsername.equals("123") && enteredPassword.equals("123")) {
+                    Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(MainActivity.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+}
+
+
+WelcomeActivity.java
+
+package com.example.loginapp;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class WelcomeActivity extends AppCompatActivity {
+
+    private Button buttonSum;
+    private Button buttonSub;
+    private Button buttonMultiply;
+    private Button buttonDiv;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_welcome);
+
+        buttonSum = findViewById(R.id.buttonSum);
+        buttonSub = findViewById(R.id.buttonSub);
+        buttonMultiply = findViewById(R.id.buttonMultiply);
+        buttonDiv= findViewById(R.id.buttonDiv);
+
+
+        buttonSum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                    Intent intent = new Intent(WelcomeActivity.this, SumActivity.class);
+                    startActivity(intent);
+
+            }
+
+        });
+        buttonSub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(WelcomeActivity.this, SubActivity.class);
+                startActivity(intent);
+
+            }
+
+        });
+        buttonMultiply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(WelcomeActivity.this, MuliplyActivity.class);
+                startActivity(intent);
+
+            }
+
+        });
+               buttonDiv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(WelcomeActivity.this, DivideActivity.class);
+                startActivity(intent);
+
+            }
+
+        });
+
+
+    }
+}
+
+
+SumActivity.java
+
+package com.example.loginapp;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SumActivity extends AppCompatActivity {
+
+    private EditText editTextNum1;
+    private EditText editTextNum2;
+    private Button buttonSum;
+    private TextView textViewResult;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_sum);
+
+        editTextNum1 = findViewById(R.id.editTextNum1);
+        editTextNum2 = findViewById(R.id.editTextNum2);
+        buttonSum = findViewById(R.id.buttonSum);
+        textViewResult = findViewById(R.id.textViewResult);
+
+        buttonSum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String num1Str = editTextNum1.getText().toString();
+                String num2Str = editTextNum2.getText().toString();
+
+                if (num1Str.isEmpty() || num2Str.isEmpty()) {
+                    Toast.makeText(SumActivity.this, "Please enter both numbers", Toast.LENGTH_SHORT).show();
+                } else {
+                    int num1 = Integer.parseInt(num1Str);
+                    int num2 = Integer.parseInt(num2Str);
+                    int sum = num1 + num2;
+
+                    textViewResult.setText("Result: " + sum);
+                }
+            }
+        });
+    }
+}
+
+SubActivity.java
+
+package com.example.loginapp;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SubActivity extends AppCompatActivity {
+
+    private EditText editTextNum1;
+    private EditText editTextNum2;
+    private Button buttonSub;
+    private TextView textViewResult;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_sub);
+
+        editTextNum1 = findViewById(R.id.editTextNum1);
+        editTextNum2 = findViewById(R.id.editTextNum2);
+        buttonSub = findViewById(R.id.buttonSub);
+        textViewResult = findViewById(R.id.textViewResult);
+
+        buttonSub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String num1Str = editTextNum1.getText().toString();
+                String num2Str = editTextNum2.getText().toString();
+
+                if (num1Str.isEmpty() || num2Str.isEmpty()) {
+                    Toast.makeText(SubActivity.this, "Please enter both numbers", Toast.LENGTH_SHORT).show();
+                } else {
+                    int num1 = Integer.parseInt(num1Str);
+                    int num2 = Integer.parseInt(num2Str);
+                    int sub = num1 - num2;
+
+                    textViewResult.setText("Result: " + sub);
+                }
+            }
+        });
+    }
+}
+
+
+MuliplyActivity.java
+
+package com.example.loginapp;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MuliplyActivity extends AppCompatActivity {
+
+    private EditText editTextNum1;
+    private EditText editTextNum2;
+    private Button buttonMultiply;
+    private TextView textViewResult;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_mul);
+
+        editTextNum1 = findViewById(R.id.editTextNum1);
+        editTextNum2 = findViewById(R.id.editTextNum2);
+        buttonMultiply = findViewById(R.id.buttonMultiply);
+        textViewResult = findViewById(R.id.textViewResult);
+
+        buttonMultiply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String num1Str = editTextNum1.getText().toString();
+                String num2Str = editTextNum2.getText().toString();
+
+                if (num1Str.isEmpty() || num2Str.isEmpty()) {
+                    Toast.makeText(MuliplyActivity.this, "Please enter both numbers", Toast.LENGTH_SHORT).show();
+                } else {
+                    int num1 = Integer.parseInt(num1Str);
+                    int num2 = Integer.parseInt(num2Str);
+                    int mul = num1 * num2;
+
+                    textViewResult.setText("Result: " + mul);
+                }
+            }
+        });
+    }
+}
+
+DivideActivity.java
+
+package com.example.loginapp;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class DivideActivity extends AppCompatActivity {
+
+    private EditText editTextNum1;
+    private EditText editTextNum2;
+    private Button buttonDiv
+    private TextView textViewResult;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_sum);
+
+        editTextNum1 = findViewById(R.id.editTextNum1);
+        editTextNum2 = findViewById(R.id.editTextNum2);
+        buttonDiv= findViewById(R.id.buttonDiv);
+        textViewResult = findViewById(R.id.textViewResult);
+
+        buttonDiv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String num1Str = editTextNum1.getText().toString();
+                String num2Str = editTextNum2.getText().toString();
+
+                if (num1Str.isEmpty() || num2Str.isEmpty()) {
+                    Toast.makeText(DivideActivity.this, "Please enter both numbers", Toast.LENGTH_SHORT).show();
+                } else {
+                    int num1 = Integer.parseInt(num1Str);
+                    int num2 = Integer.parseInt(num2Str);
+                    int div = num1 / num2;
+
+                    textViewResult.setText("Result: " + div);
+                }
+            }
+        });
+    }
+}
